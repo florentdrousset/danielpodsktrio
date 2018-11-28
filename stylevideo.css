@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Code_Pro_Demo';
+    src: url('fonts/Code_Pro_Demo-webfont.woff2') format('woff2'),
+         url('fonts/Code_Pro_Demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#wrapper {
+
+}
+
+body {
+  width: 100%;
+  height: 97 vh;
+  margin: 0;
+    overflow:hidden;    
+}
+
+header {
+    background-color:black;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    display:inline-block;
+}
+
+footer {
+    background-color:black;
+    position:fixed;
+    bottom:0;
+    left:0;
+    height:60px;
+    width:100%;
+}
+
+nav {
+    position:relative;
+    left:190px;
+}
+ul {
+    color:white;
+    list-style:none;
+    font-family: 'Code_Pro_Demo', Arial;
+    display:flex;
+    left:60%;
+    text-transform: uppercase;
+    position:absolute;
+    bottom:0px;
+}
+
+li {
+    padding-right:8px;
+    
+}
+
+a {
+    text-decoration:none;
+    color:white;
+    
+}
+li a:hover {
+    background-color:white;
+    color:black;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+#titre {
+    color:white;
+    font-family: 'Code_Pro_Demo';
+    font-size:4em;
+    height:100px;
+    position:relative;
+    bottom:-25px;
+    right:-15px;
+}
+
+section {
+    background-image:url('pics/daniel.jpg') ;
+    background-size : 100%, 100%;
+    position:absolute;
+    top:164px;
+    left:0px;
+    width:100vw;
+    height:97vh;
+    
+}
+
+section img {
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+}
+
+#textbio {
+    position:relative;
+    top:30px;
+    left:30px;
+    height:350px;
+    width:90vw;
+    padding:25px;
+    font-family:verdana;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius:10px;
+    overflow: scroll;
+}
+
+#video {
+    position:relative;
+    top:8vh;
+    text-align:center;
+}
