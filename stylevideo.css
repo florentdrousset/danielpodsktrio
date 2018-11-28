@@ -80,7 +80,7 @@ li a:hover {
 }
 
 section {
-    background-image:url('pics/daniel.jpg') ;
+    background-image:url('pics/daniel.png') ;
     background-size : 100%, 100%;
     position:absolute;
     top:164px;
@@ -90,7 +90,7 @@ section {
     
 }
 
-section img {
+section background {
     -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
     filter: blur(5px);
 }
