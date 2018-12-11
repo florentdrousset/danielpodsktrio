@@ -1,102 +1,158 @@
 @font-face {
     font-family: 'Code_Pro_Demo';
     src: url('fonts/Code_Pro_Demo-webfont.woff2') format('woff2'),
-         url('fonts/Code_Pro_Demo-webfont.woff') format('woff');
+        url('fonts/Code_Pro_Demo-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
-#wrapper {
-    display:flex;
-    align-content:space-around;
-    position:relative;
-    top:40px;
+
+html {
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 body {
-  width: 100%;
-  height: 97 vh;
-  margin: 0;
-    overflow:hidden;    
+    margin: 0;
+    /*overflow:hidden;    */
+}
+
+
+iframe {
+    width:560px;
+    height:315px;
 }
 
 header {
-    background-color:black;
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    display:inline-block;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
 }
 
-footer {
-    background-color:black;
-    position:fixed;
-    bottom:0;
-    left:0;
-    height:60px;
-    width:100%;
+#wrapper {
+    display:flex;
+    align-content: space-around;
+}
+
+#video {
+    margin-top:60px;
+    margin-left:40px;
+    margin-right:40px;
+    
+}
+
+#video2 {
+    margin-top:60px;
+    
+    
+}
+#titre {
+    color: white;
+    font-size: 4em;
+    padding-top: 10vh;
 }
 
 nav {
-    position:relative;
-    left:190px;
+
 }
+
 ul {
-    color:white;
-    list-style:none;
+    color: white;
+    list-style: none;
     font-family: 'Code_Pro_Demo', Arial;
-    display:flex;
-    left:60%;
+    display: flex;
     text-transform: uppercase;
-    position:absolute;
-    bottom:0px;
+
 }
 
 li {
-    padding-right:8px;
-    
+    padding-right: 8px;
+
 }
 
-a {
-    text-decoration:none;
-    color:white;
-    
+
+footer {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
 }
+
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
 li a:hover {
-    background-color:white;
-    color:black;
+    background-color: white;
+    color: black;
     -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
 }
 
-#titre {
-    color:white;
-    font-family: 'Code_Pro_Demo';
-    font-size:4em;
-    height:100px;
-    position:relative;
-    bottom:-25px;
-    right:-15px;
-}
+
+
 
 section {
-    background-image:url('pics/daniel.png') ;
-    background-size : 100%;
-    position:absolute;
-    top:164px;
-    left:0px;
-    width:100vw;
-    height:97vh;
+    background-image: url('pics/daniel.png');
+    background-size: 100%, 100%;
+    width: 100%;
+    height: 97vh;
 }
 
+
+p {
+    font-family: 'Code_Pro_Demo', Arial;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 900px) {
+    #titre {
+        font-size: 2em;
+        padding-top:3vh;
+        padding-left:1vh;
+        width:20vw;
+    }
+    
+    ul {
+        flex-direction:column;
+        text-align:right;
+        font-size:1.2em;
+        border-right : 1px solid white;
+        position:relative;
+        top:2.5vh;
+        right:10px;
+    }
+    
+    section {
+    background-image: url('pics/daniel.png');
+    background-size: cover;
+ background-position: center;
+}
+    footer {
+        display: none;
+    }
+    
+iframe {
+    width:560px;
+    height:315px;
+    margin:0;
+}
 #video {
-    padding-left: 40px;
-    padding-right: 70px;
+    margin:0;
 }
 
 #video2 {
-    
+    display:none;
+}
 }
